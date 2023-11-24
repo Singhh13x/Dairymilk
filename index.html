@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Dairy Milk</title>
+     <link rel="icon" href="edff3e29-35e8-4d39-be07-254c89dbd953.3d05f2fc98bbc6ebce7b7e00c97ba714.webp">
+</head>
+<body>
+    <header>
+        <h1>Dairy Milk</h1>
+    </header>
+
+    <section id="maincontent">
+        <article>
+            <h2>About Dairy Silk</h2>
+            <p>Cadbury Dairy Milk is a British brand of milk chocolate manufactured by Cadbury. It was introduced in the United Kingdom in June 1905 and now consists of a number of products. Every product in the Dairy Milk line is made with exclusively milk chocolate.</p>
+            <img src="WhatsApp Image 2023-11-23 at 8.01.09 PM.jpeg">
+        </article>
+
+        <article>
+            <h2>Buy Dairy Milk</h2>
+            <div class="buy">
+                <h3>Dairy Milk</h3>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Pack of 10</td>
+                        <td>$10.00 CAD</td>
+                    </tr>
+                </table>
+                <div class="quantity">
+                    <button onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <div class="buy-buttons">
+                    <button onclick="addToCart()">Add to Your Cart</button>
+                    <button onclick="buyNow()">Place Your Order</button>
+                </div>
+            </div>
+
+            <div class="nutrition">
+                <h2>Nutritional Information</h2>
+                <p>Per serving:
+                    <ul>
+                        <li>Calories: [150]</li>
+                        <li>Sugar: [30] g</li>
+                        <li>Protein: [5] g</li>
+                    </ul>
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <div class="footercon">
+            <div class="contact-info">
+                <img src="dairy-milk-marvellous-creations-chocolate-bar-19.webp" alt="Candy Kachha Aam Logo">
+                <p>Contact for more information:</p>
+                <address>
+                    Gurmant Cho.<br>
+                    Corvette Ave. <br>
+                    Scarborough, Canada<br>
+                    Phone: 437-313-1383<br>
+                    Email: guru13@gmail.com
+                </address>
+            </div>
+            <div class="quick-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+
+                    <input type="submit" value="Submit">
+                </form>
+                <div class="comment-section">
+                    <h3>Comments</h3>
+                    <p>Guru: This chocolate is amazing!</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value);
+            quantityInput.value = currentQuantity + 1;
+        }
+
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value);
+            if (currentQuantity > 1) {
+                quantityInput.value = currentQuantity - 1;
+            }
+        }
+
+        function addToCart() {
+            alert('Added to Cart!');
+        }
+
+        function buyNow() {
+            alert('Place Order!'); 
+        }
+    </script>
+
+</body>
+</html>

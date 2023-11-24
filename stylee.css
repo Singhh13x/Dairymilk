@@ -1,0 +1,174 @@
+body {
+    background-color: #3a0ca3;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+header {
+    background: linear-gradient(to right, #3a0ca3, rgb(38, 91, 236));
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #3a0ca3, rgb(38, 91, 236));
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#maincontent {
+    margin: 2em;
+    background: linear-gradient(to bottom, #F0F0F0, #E0E0E0);
+    padding: 2em;
+    border-radius: 20px;
+}
+article {
+    flex: 1;
+    text-align: center;
+    padding: 1.5em;
+    background: linear-gradient(to bottom, #FFF, #F0F0F0);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #DDD;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article h2 {
+    color: #333;
+}
+
+.buy {
+    background-color: #3a0ca3;
+    color: white;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.quantity button {
+    background-color: #3a0ca3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.quantity input {
+    margin: 0 0.5em;
+    padding: 0.5em;
+    border: 2px solid #3a0ca3;
+    border-radius: 4px;
+}
+.nutrition {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.nutrition h2 {
+    color: #3a0ca3;
+}
+
+.nutrition ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nutrition li {
+    margin: 5px 0;
+    color: #333;
+}
+
+.footercon {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a0ca3;
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+.contact-info img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1em;
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.quick-form {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.comment-section {
+    margin-top: 1em;
+}
+
+.comment-section h3 {
+    color: #3a0ca3;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.comment p {
+    margin: 0;
+}
+
+form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #3a0ca3;
+    color: white;
+    cursor: pointer;
+}
